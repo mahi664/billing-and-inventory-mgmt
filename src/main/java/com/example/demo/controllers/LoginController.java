@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.services.UserLogInService;
 
 @RestController(value="UserLogin")
+@CrossOrigin(origins = "https://bni.stackblitz.io")
 public class LoginController {
 
 	@Autowired
