@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.bo.CategoryDetailsBO;
@@ -17,6 +18,7 @@ import com.example.demo.services.CategoryService;
 import com.example.demo.storage.StorageService;
 
 @RestController
+@CrossOrigin(origins = "https://bni.stackblitz.io")
 public class CategoryController {
 
 	@Autowired
